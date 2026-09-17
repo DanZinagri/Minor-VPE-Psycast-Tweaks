@@ -3,8 +3,15 @@
 <Operation Class="PatchOperationSequence">
   <success>Always</success>
   <operations>
-	<li Class="PatchOperationRemove">
+    <li Class="PatchOperationRemove">
         <xpath>Defs/VEF.Abilities.AbilityDef[defName="VPE_Resurrect"]/modExtensions/li[@Class="VanillaPsycastsExpanded.AbilityExtension_PsychicComa"]</xpath>
+    </li>
+    <!-- Paralysis Pulse no longer hits its own caster. VEF's AoE target gathering skips the caster when this is false. -->
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/VEF.Abilities.AbilityDef[defName="VPE_ParalysisPulse"]/targetingParametersForAoE/canTargetSelf</xpath>
+        <value>
+          <canTargetSelf>False</canTargetSelf>
+        </value>
     </li>
   </operations>
 </Operation>
