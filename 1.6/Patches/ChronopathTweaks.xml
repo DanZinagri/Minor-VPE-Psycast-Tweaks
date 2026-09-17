@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    	<li Class="PatchOperationRemove">
+        <xpath>Defs/VEF.Abilities.AbilityDef[defName="VPE_PlantTimeskip"]/modExtensions/li[@Class="VanillaPsycastsExpanded.Chronopath.AbilityExtension_Age"]</xpath>
+      </li>
+	<li Class="PatchOperationRemove">
+        <xpath>Defs/VEF.Abilities.AbilityDef[defName="VPE_TimeskipMeditation"]/modExtensions/li[@Class="VanillaPsycastsExpanded.AbilityExtension_PsychicComa"]</xpath>
+      </li>
+	<li Class="PatchOperationRemove">
+        <xpath>Defs/VEF.Abilities.AbilityDef[defName="VPE_SeasonTimeskip"]/modExtensions/li[@Class="VanillaPsycastsExpanded.AbilityExtension_PsychicComa"]</xpath>
+      </li>
+	<li Class="PatchOperationRemove">
+        <xpath>Defs/VEF.Abilities.AbilityDef[defName="VPE_TimeReversal"]/modExtensions/li[@Class="VanillaPsycastsExpanded.AbilityExtension_PsychicComa"]</xpath>
+      </li>
+	<li Class="PatchOperationRemove">
+        <xpath>Defs/VEF.Abilities.AbilityDef[defName="VPE_Timequake"]/modExtensions/li[@Class="VanillaPsycastsExpanded.AbilityExtension_PsychicComa"]</xpath>
+      </li>
+  </operations>
+</Operation>
+</Patch>
