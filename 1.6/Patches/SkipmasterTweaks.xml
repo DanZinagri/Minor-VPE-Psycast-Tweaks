@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
-<Operation Class="PatchOperationSequence">
+<Operation Class="PatchOperationReplace">
   <success>Always</success>
-  <operations>
-    <li Class="PatchOperationReplace">
-        <xpath>Defs/VEF.Abilities.AbilityDef[defName="VPE_Skip"]/modExtensions/li[@Class="VEF.Abilities.AbilityExtension_Stun"]/stunTicks</xpath>
-        <value>
-          <stunTicks>0</stunTicks>
-        </value>
-    </li>
-  </operations>
+  <xpath>Defs/VEF.Abilities.AbilityDef[defName="VPE_Skip"]/modExtensions/li[@Class="VEF.Abilities.AbilityExtension_Stun"]/stunTicks</xpath>
+  <value>
+    <stunTicks>0</stunTicks>
+  </value>
 </Operation>
 </Patch>

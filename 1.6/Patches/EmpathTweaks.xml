@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
-<Operation Class="PatchOperationSequence">
+<Operation Class="PatchOperationRemove">
   <success>Always</success>
-  <operations>
-    <li Class="PatchOperationRemove">
-        <xpath>Defs/VEF.Abilities.AbilityDef[defName="VPE_ReunionFarskip"]/modExtensions/li[@Class="VanillaPsycastsExpanded.AbilityExtension_PsychicComa"]</xpath>
-    </li>
-  </operations>
+  <xpath>Defs/VEF.Abilities.AbilityDef[defName="VPE_ReunionFarskip"]/modExtensions/li[@Class="VanillaPsycastsExpanded.AbilityExtension_PsychicComa"]</xpath>
 </Operation>
 </Patch>
